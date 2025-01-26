@@ -60,7 +60,8 @@ def play(args):
         web_viewer = webviewer.WebViewer()
     faulthandler.enable()
     exptid = args.exptid
-    log_pth = "../../logs/{}/".format(args.proj_name) + args.exptid
+    log_pth = "/home/fabeha/extreme-parkour/legged_gym/logs/{}/".format(args.proj_name) + args.exptid
+    # log_pth = "../../logs/{}/".format(args.proj_name) + args.exptid
 
     env_cfg, train_cfg = task_registry.get_cfgs(name=args.task)
     # override some parameters for testing
